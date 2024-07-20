@@ -1,0 +1,14 @@
+.parcel-cache/
+dist/
+.vscode/
+node_modules/
+coverage/
+docs/
+#types/
+#browser/
+#cjs/
+#esm/
+.nyc_output/
+npm-debug.log
+.env*
+!.env.example

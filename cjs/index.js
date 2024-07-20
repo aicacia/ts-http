@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createTextReader = exports.readAll = exports.writeToUint8Array = exports.concatUint8Array = exports.HTTPRequest = exports.writeRequestOrResponse = exports.parseResponse = exports.parseRequest = void 0;
+var http_1 = require("./http");
+Object.defineProperty(exports, "parseRequest", { enumerable: true, get: function () { return http_1.parseRequest; } });
+Object.defineProperty(exports, "parseResponse", { enumerable: true, get: function () { return http_1.parseResponse; } });
+Object.defineProperty(exports, "writeRequestOrResponse", { enumerable: true, get: function () { return http_1.writeRequestOrResponse; } });
+Object.defineProperty(exports, "HTTPRequest", { enumerable: true, get: function () { return http_1.HTTPRequest; } });
+Object.defineProperty(exports, "concatUint8Array", { enumerable: true, get: function () { return http_1.concatUint8Array; } });
+Object.defineProperty(exports, "writeToUint8Array", { enumerable: true, get: function () { return http_1.writeToUint8Array; } });
+Object.defineProperty(exports, "readAll", { enumerable: true, get: function () { return http_1.readAll; } });
+Object.defineProperty(exports, "createTextReader", { enumerable: true, get: function () { return http_1.createTextReader; } });
