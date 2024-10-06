@@ -50,6 +50,25 @@ tape("parse response", async (assert: tape.Test) => {
 	assert.end();
 });
 
+tape("parse chunked response", async (assert: tape.Test) => {
+	const responseReader = createRandomReadableStreamForText(
+		`HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+
+d
+Hello, World!
+0
+
+`,
+	).getReader();
+	const response = await parseResponse(responseReader);
+	assert.equal(response.status, 200);
+	assert.equal(response.statusText, "OK");
+	const body = await response.text();
+	assert.equal(body, "Hello, World!");
+	assert.end();
+});
+
 tape("write request", async (assert: tape.Test) => {
 	const stream = new TransformStream<Uint8Array, Uint8Array>();
 	writeRequestOrResponse(

@@ -37,9 +37,9 @@
 	"readmeFilename": "README.md",
 	"devDependencies": {
 		"@biomejs/biome": "1",
-		"@rollup/plugin-commonjs": "26",
+		"@rollup/plugin-commonjs": "28",
 		"@rollup/plugin-node-resolve": "15",
-		"@rollup/plugin-typescript": "11",
+		"@rollup/plugin-typescript": "12",
 		"@types/tape": "5",
 		"events": "3",
 		"husky": "9",
