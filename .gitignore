@@ -4,10 +4,10 @@ dist/
 node_modules/
 coverage/
 docs/
-#types/
-#browser/
-#cjs/
-#esm/
+types/
+browser/
+cjs/
+esm/
 .nyc_output/
 npm-debug.log
 .env*
