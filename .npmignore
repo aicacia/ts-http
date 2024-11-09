@@ -16,5 +16,4 @@ npm-debug.log
 rollup.config.mjs
 tsconfig.esm.json
 tsconfig.json
-.env*
 pnpm-workspace.yaml

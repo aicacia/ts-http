@@ -23,12 +23,27 @@ importers:
       '@rollup/plugin-typescript':
         specifier: '12'
         version: 12.1.0(rollup@4.24.0)(tslib@2.7.0)(typescript@5.6.2)
+      '@types/benchmark':
+        specifier: '2'
+        version: 2.1.5
+      '@types/http-string-parser':
+        specifier: ^0.0.33
+        version: 0.0.33
       '@types/tape':
         specifier: '5'
         version: 5.6.4
+      benchmark:
+        specifier: '2'
+        version: 2.1.4
       events:
         specifier: '3'
         version: 3.3.0
+      http-parser-js:
+        specifier: '0'
+        version: 0.5.8
+      http-string-parser:
+        specifier: '0'
+        version: 0.0.6
       husky:
         specifier: '9'
         version: 9.1.6
@@ -396,11 +411,17 @@ packages:
   '@tsconfig/node16@1.0.4':
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
 
+  '@types/benchmark@2.1.5':
+    resolution: {integrity: sha512-cKio2eFB3v7qmKcvIHLUMw/dIx/8bhWPuzpzRT4unCPRTD8VdA9Zb0afxpcxOqR4PixRS7yT42FqGS8BYL8g1w==}
+
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
+
+  '@types/http-string-parser@0.0.33':
+    resolution: {integrity: sha512-8F4z30z3/mcKcqjdAhCKOEcTG03Db3XMUkCIWaX+sYeNHypops+HQ3ATybD7vyvZAYtBQcEGboIC2Shratz5UQ==}
 
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
@@ -490,6 +511,9 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  benchmark@2.1.4:
+    resolution: {integrity: sha512-l9MlfN4M1K/H2fbhfMy3B7vJd6AGKJVQn2h6Sg/Yx+KckoUA7ewS5Vv6TjSq18ooE1kS9hhAlQRH3AkXIh/aOQ==}
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -858,6 +882,12 @@ packages:
   html-void-elements@3.0.0:
     resolution: {integrity: sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==}
 
+  http-parser-js@0.5.8:
+    resolution: {integrity: sha512-SGeBX54F94Wgu5RH3X5jsDtf4eHyRogWX1XGT3b4HuW3tQPM4AaBzoUji/4AAJNXCEOWZ5O0DgZmJw1947gD5Q==}
+
+  http-string-parser@0.0.6:
+    resolution: {integrity: sha512-sngOeBkIL32kum4Z+FulU+3Ve41B3js1IKfel0WAhwLqDJiUPC1UTqFRBr2/IDw9dbks6B4xSIYgPiJU7ivxww==}
+
   husky@9.1.6:
     resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
     engines: {node: '>=18'}
@@ -1201,6 +1231,9 @@ packages:
   pkg-dir@4.2.0:
     resolution: {integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==}
     engines: {node: '>=8'}
+
+  platform@1.3.6:
+    resolution: {integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==}
 
   plur@1.0.0:
     resolution: {integrity: sha512-qSnKBSZeDY8ApxwhfVIwKwF36KVJqb1/9nzYYq3j3vdwocULCXT8f8fQGkiw1Nk9BGfxiDagEe/pwakA+bOBqw==}
@@ -1975,11 +2008,15 @@ snapshots:
 
   '@tsconfig/node16@1.0.4': {}
 
+  '@types/benchmark@2.1.5': {}
+
   '@types/estree@1.0.6': {}
 
   '@types/hast@3.0.4':
     dependencies:
       '@types/unist': 3.0.3
+
+  '@types/http-string-parser@0.0.33': {}
 
   '@types/mdast@4.0.4':
     dependencies:
@@ -2072,6 +2109,11 @@ snapshots:
       possible-typed-array-names: 1.0.0
 
   balanced-match@1.0.2: {}
+
+  benchmark@2.1.4:
+    dependencies:
+      lodash: 4.17.21
+      platform: 1.3.6
 
   brace-expansion@1.1.11:
     dependencies:
@@ -2506,6 +2548,10 @@ snapshots:
 
   html-void-elements@3.0.0: {}
 
+  http-parser-js@0.5.8: {}
+
+  http-string-parser@0.0.6: {}
+
   husky@9.1.6: {}
 
   imurmurhash@0.1.4: {}
@@ -2873,6 +2919,8 @@ snapshots:
   pkg-dir@4.2.0:
     dependencies:
       find-up: 4.1.0
+
+  platform@1.3.6: {}
 
   plur@1.0.0: {}
 
