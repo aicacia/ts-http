@@ -2,6 +2,6 @@
 	"$schema": "node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
 		"ignoreUnknown": true,
-		"ignore": ["browser/**/*", "cjs/**/*", "esm/**/*", "types/**/*"]
+		"ignore": ["browser/**/*", "cjs/**/*", "esm/**/*", "types/**/*", "*.0x"]
 	}
 }
